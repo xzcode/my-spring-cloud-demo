@@ -1,0 +1,18 @@
+server:
+  port: 9001
+
+spring:
+  threads:
+    virtual:
+      enabled: true
+
+# Knife4j
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /doc.html
+
+logging:
+  level:
+    com.mydemo: debug

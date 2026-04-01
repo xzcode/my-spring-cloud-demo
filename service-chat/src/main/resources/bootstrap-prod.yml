@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        namespace: prod
+      discovery:
+        namespace: prod

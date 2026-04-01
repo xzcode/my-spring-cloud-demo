@@ -1,0 +1,17 @@
+server:
+  port: 9011
+
+spring:
+  threads:
+    virtual:
+      enabled: true
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /doc.html
+
+logging:
+  level:
+    com.mydemo: debug

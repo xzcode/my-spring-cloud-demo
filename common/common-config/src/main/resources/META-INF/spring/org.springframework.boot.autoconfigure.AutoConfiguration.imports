@@ -1,0 +1,3 @@
+com.mydemo.common.config.mongo.PrimaryMongoConfig
+com.mydemo.common.config.mongo.SecondaryMongoConfig
+com.mydemo.common.config.mongo.ReactiveMongoConfig

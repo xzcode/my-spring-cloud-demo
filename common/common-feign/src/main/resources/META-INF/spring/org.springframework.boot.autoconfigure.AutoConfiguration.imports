@@ -1,0 +1,2 @@
+com.mydemo.common.feign.interceptor.FeignRequestInterceptor
+com.mydemo.common.feign.client.UserFeignClientFallbackFactory

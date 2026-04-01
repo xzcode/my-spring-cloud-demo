@@ -1,0 +1,17 @@
+# Nacos 共享配置 - Redis
+# 在 Nacos 控制台的各环境 Namespace (dev/test/prod) 中创建此配置
+# Data ID: shared-redis.yml  Group: DEFAULT_GROUP
+
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      database: 0
+      timeout: 3000ms
+      lettuce:
+        pool:
+          max-active: 16
+          max-idle: 8
+          min-idle: 2
+          max-wait: 3000ms

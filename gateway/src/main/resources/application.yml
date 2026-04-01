@@ -1,0 +1,74 @@
+server:
+  port: 9000
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: service-user
+          uri: lb://service-user
+          predicates:
+            - Path=/api/user/**
+        - id: service-live
+          uri: lb://service-live
+          predicates:
+            - Path=/api/live/**
+        - id: service-wallet
+          uri: lb://service-wallet
+          predicates:
+            - Path=/api/wallet/**
+        - id: service-activity
+          uri: lb://service-activity
+          predicates:
+            - Path=/api/activity/**
+        - id: service-game
+          uri: lb://service-game
+          predicates:
+            - Path=/api/game/**
+        - id: service-job
+          uri: lb://service-job
+          predicates:
+            - Path=/api/job/**
+        - id: service-mall
+          uri: lb://service-mall
+          predicates:
+            - Path=/api/mall/**
+        - id: service-chat
+          uri: lb://service-chat
+          predicates:
+            - Path=/api/chat/**
+        - id: service-tracking
+          uri: lb://service-tracking
+          predicates:
+            - Path=/api/tracking/**
+        - id: admin-api
+          uri: lb://admin-api
+          predicates:
+            - Path=/api/admin/**
+        - id: service-config
+          uri: lb://service-config
+          predicates:
+            - Path=/api/config/**
+      discovery:
+        locator:
+          enabled: false
+
+# JWT 配置
+app:
+  jwt:
+    secret: MyDemoSpringCloudSecretKey2024ForJWTTokenSign!!
+  auth:
+    white-list: /api/user/login,/api/user/register,/api/user/auth/refresh,/api/config/app/**,/doc.html,/webjars/**,/v3/api-docs/**
+
+# Knife4j 聚合文档
+knife4j:
+  gateway:
+    enabled: true
+    strategy: discover
+    discover:
+      enabled: true
+      version: openapi3
+
+logging:
+  level:
+    com.mydemo.gateway: debug

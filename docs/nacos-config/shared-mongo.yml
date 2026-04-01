@@ -1,0 +1,16 @@
+# Nacos 共享配置 - MongoDB
+# 在 Nacos 控制台的各环境 Namespace (dev/test/prod) 中创建此配置
+# Data ID: shared-mongo.yml  Group: DEFAULT_GROUP
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/mydemo
+
+# Secondary 读偏好（需要副本集环境才生效）
+app:
+  mongo:
+    secondary:
+      enabled: false
+    reactive:
+      enabled: false

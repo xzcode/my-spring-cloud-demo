@@ -1,0 +1,10 @@
+# Nacos 共享配置 - Kafka
+# 在 Nacos 控制台的各环境 Namespace (dev/test/prod) 中创建此配置
+# Data ID: shared-kafka.yml  Group: DEFAULT_GROUP
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: ${spring.application.name}
+      auto-offset-reset: latest
