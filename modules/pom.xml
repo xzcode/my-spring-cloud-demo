@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.mydemo</groupId>
+        <artifactId>my-spring-cloud-demo</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>modules</artifactId>
+    <packaging>pom</packaging>
+    <name>modules</name>
+    <description>业务模块聚合</description>
+
+    <modules>
+        <module>user</module>
+        <module>wallet</module>
+        <module>live</module>
+        <module>chat</module>
+        <module>game</module>
+        <module>activity</module>
+        <module>mall</module>
+        <module>tracking</module>
+        <module>admin</module>
+        <module>appconfig</module>
+        <module>integration</module>
+    </modules>
+
+</project>

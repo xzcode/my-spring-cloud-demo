@@ -1,0 +1,19 @@
+# Nacos Namespace: prod
+# Data ID: shared-mongo.yml  Group: DEFAULT_GROUP
+
+spring:
+  data:
+    mongodb:
+      host: mongo-prod.internal
+      port: 27017
+      username: mydemo_app
+      password: CHANGE_ME_PROD_PASSWORD
+      authentication-database: admin
+
+app:
+  mongo:
+    secondary:
+      enabled: true
+      uri: mongodb://mongo-secondary-prod.internal:27017
+    reactive:
+      enabled: false

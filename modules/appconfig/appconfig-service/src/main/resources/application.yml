@@ -1,0 +1,14 @@
+server:
+  port: 9011
+
+spring:
+  data:
+    mongodb:
+      database: mydemo_appconfig
+  threads:
+    virtual:
+      enabled: true
+
+logging:
+  level:
+    com.mydemo: debug

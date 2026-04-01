@@ -1,0 +1,14 @@
+server:
+  port: 9208
+
+spring:
+  data:
+    mongodb:
+      database: mydemo_chat
+  threads:
+    virtual:
+      enabled: true
+
+logging:
+  level:
+    com.mydemo: debug

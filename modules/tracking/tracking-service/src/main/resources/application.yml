@@ -1,0 +1,14 @@
+server:
+  port: 9009
+
+spring:
+  data:
+    mongodb:
+      database: mydemo_tracking
+  threads:
+    virtual:
+      enabled: true
+
+logging:
+  level:
+    com.mydemo: debug

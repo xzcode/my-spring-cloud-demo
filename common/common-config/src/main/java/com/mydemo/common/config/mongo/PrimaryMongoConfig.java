@@ -17,7 +17,7 @@ import org.springframework.data.mongodb.core.mapping.MongoMappingContext;
  * <p>去除 _class 字段，使用默认数据源</p>
  */
 @Configuration
-@ConditionalOnProperty(prefix = "spring.data.mongodb", name = "uri")
+@ConditionalOnProperty(prefix = "spring.data.mongodb", name = "database")
 public class PrimaryMongoConfig {
 
     @Bean

@@ -1,0 +1,15 @@
+# Nacos Namespace: dev
+# Data ID: shared-mongo.yml  Group: DEFAULT_GROUP
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+
+app:
+  mongo:
+    secondary:
+      enabled: false
+    reactive:
+      enabled: false

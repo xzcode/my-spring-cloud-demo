@@ -1,0 +1,11 @@
+server:
+  port: 9206
+
+spring:
+  threads:
+    virtual:
+      enabled: true
+
+logging:
+  level:
+    com.mydemo: debug

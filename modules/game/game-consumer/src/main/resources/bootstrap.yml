@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: game-consumer
+  profiles:
+    active: @profileActive@
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      config:
+        file-extension: yml
+        shared-configs:
+          - data-id: shared-mongo.yml
+            refresh: true
+          - data-id: shared-redis.yml
+            refresh: true
+          - data-id: shared-kafka.yml
+            refresh: true
+      discovery:
+        server-addr: ${spring.cloud.nacos.server-addr}

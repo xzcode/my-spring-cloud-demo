@@ -24,4 +24,6 @@ public final class KafkaTopicConstants {
     public static final String TOPIC_CHAT_MESSAGE = "topic-chat-message";
     /** 数据埋点 */
     public static final String TOPIC_TRACKING = "topic-tracking";
+    /** 集成事件 */
+    public static final String TOPIC_INTEGRATION = "topic-integration";
 }

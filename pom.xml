@@ -14,17 +14,7 @@
     <modules>
         <module>common</module>
         <module>gateway</module>
-        <module>service-user</module>
-        <module>service-live</module>
-        <module>service-wallet</module>
-        <module>service-activity</module>
-        <module>service-game</module>
-        <module>service-job</module>
-        <module>service-mall</module>
-        <module>service-chat</module>
-        <module>service-tracking</module>
-        <module>admin-api</module>
-        <module>service-config</module>
+        <module>modules</module>
     </modules>
 
     <properties>
@@ -147,6 +137,63 @@
             <dependency>
                 <groupId>com.mydemo</groupId>
                 <artifactId>common-feign</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- 域内公共模块 -->
+            <dependency>
+                <groupId>com.mydemo</groupId>
+                <artifactId>user-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mydemo</groupId>
+                <artifactId>wallet-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mydemo</groupId>
+                <artifactId>live-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mydemo</groupId>
+                <artifactId>chat-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mydemo</groupId>
+                <artifactId>game-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mydemo</groupId>
+                <artifactId>activity-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mydemo</groupId>
+                <artifactId>mall-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mydemo</groupId>
+                <artifactId>tracking-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mydemo</groupId>
+                <artifactId>admin-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mydemo</groupId>
+                <artifactId>appconfig-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mydemo</groupId>
+                <artifactId>integration-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>

@@ -1,0 +1,14 @@
+server:
+  port: 9004
+
+spring:
+  data:
+    mongodb:
+      database: mydemo_activity
+  threads:
+    virtual:
+      enabled: true
+
+logging:
+  level:
+    com.mydemo: debug

@@ -1,0 +1,17 @@
+# Nacos Namespace: prod
+# Data ID: shared-redis.yml  Group: DEFAULT_GROUP
+
+spring:
+  data:
+    redis:
+      host: redis-prod.internal
+      port: 6379
+      database: 0
+      password: CHANGE_ME_PROD_PASSWORD
+      timeout: 3000ms
+      lettuce:
+        pool:
+          max-active: 64
+          max-idle: 32
+          min-idle: 8
+          max-wait: 3000ms

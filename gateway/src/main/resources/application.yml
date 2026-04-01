@@ -25,10 +25,6 @@ spring:
           uri: lb://service-game
           predicates:
             - Path=/api/game/**
-        - id: service-job
-          uri: lb://service-job
-          predicates:
-            - Path=/api/job/**
         - id: service-mall
           uri: lb://service-mall
           predicates:
@@ -49,6 +45,10 @@ spring:
           uri: lb://service-config
           predicates:
             - Path=/api/config/**
+        - id: service-integration
+          uri: lb://service-integration
+          predicates:
+            - Path=/api/integration/**
       discovery:
         locator:
           enabled: false
@@ -58,7 +58,7 @@ app:
   jwt:
     secret: MyDemoSpringCloudSecretKey2024ForJWTTokenSign!!
   auth:
-    white-list: /api/user/login,/api/user/register,/api/user/auth/refresh,/api/config/app/**,/doc.html,/webjars/**,/v3/api-docs/**
+    white-list: /api/user/login,/api/user/register,/api/user/auth/refresh,/api/config/app/**,/api/integration/sms/**,/api/integration/email/**,/doc.html,/webjars/**,/v3/api-docs/**
 
 # Knife4j 聚合文档
 knife4j:

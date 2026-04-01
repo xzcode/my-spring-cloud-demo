@@ -1,0 +1,17 @@
+server:
+  port: 9006
+
+spring:
+  threads:
+    virtual:
+      enabled: true
+
+app:
+  s3:
+    endpoint: https://s3.amazonaws.com
+    bucket: mydemo-uploads
+    presign-expire-seconds: 3600
+
+logging:
+  level:
+    com.mydemo: debug

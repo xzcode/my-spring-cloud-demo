@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.mydemo</groupId>
+        <artifactId>modules</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>mydemo-appconfig</artifactId>
+    <packaging>pom</packaging>
+    <name>mydemo-appconfig</name>
+    <description>AppConfig 域聚合模块</description>
+
+    <modules>
+        <module>appconfig-common</module>
+        <module>appconfig-service</module>
+    </modules>
+
+</project>
